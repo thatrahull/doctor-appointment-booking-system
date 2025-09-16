@@ -15,23 +15,17 @@ const app = express();
 // ✅ Initialize Cloudinary
 connectCloudinary();
 
-// ✅ Allowed origins for CORS
+// ✅ Allowed origins for frontend
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://medigo-rgoc.onrender.com"
+  "https://medigo-rgoc.onrender.com" // frontend Render URL
 ];
 
 // ✅ CORS middleware
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
+  origin: allowedOrigins,
+  credentials: true,
 }));
 
 // ✅ Body parser
@@ -48,7 +42,7 @@ app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
-// ✅ Connect to MongoDB
+// ✅ Connect to MongoDB and start server
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
