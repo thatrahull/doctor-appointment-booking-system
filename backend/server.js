@@ -19,7 +19,8 @@ connectCloudinary();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://medigo-rgoc.onrender.com" // frontend Render URL
+  "https://medigo-rgoc.onrender.com" ,
+  "https://medigo-admin-9she.onrender.com"
 ];
 
 // ✅ CORS middleware
