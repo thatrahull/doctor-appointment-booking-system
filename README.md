@@ -1,5 +1,12 @@
 # 🏥 MediGo - Doctor Appointment Booking System
 
+---
+
+## 🔗 Live Demo 
+ https://medigo-rgoc.onrender.com
+
+---
+
 MediGo is a modern, hassle-free platform for booking doctor appointments online.  
 It provides a **seamless bridge between patients and healthcare providers**, allowing users to book appointments, explore medical services, and make secure payments — all in one place.  
 
