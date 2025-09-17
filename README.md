@@ -31,9 +31,6 @@ The platform is designed with **scalability, security, and user-friendliness** i
 ### 🏠 Home Page  
 ![Home Page](/frontend/public/medigo.png)
 
-### 👩‍⚕️ Our Specialists  
-![Doctors](/frontend/public/doctors.png)
-
 ### 📖 About Us  
 ![About](/frontend/public/About.png)
 
